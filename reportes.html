@@ -1,0 +1,16 @@
+<h1>{{ titulo }}</h1>
+<table border="1">
+  <tr>
+    {% for k in datos[0].keys() %}
+    <th>{{ k }}</th>
+    {% endfor %}
+  </tr>
+  {% for fila in datos %}
+  <tr>
+    {% for valor in fila.values() %}
+    <td>{{ valor }}</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+<a href="/">Volver</a>
