@@ -1,1 +1,10 @@
-<h1>GitHub Web Test</h1>
+<h1>Clientes registrados</h1>
+<table border="1">
+  <tr><th>ID</th><th>Nombre</th><th>Correo</th></tr>
+  {% for c in clientes %}
+  <tr><td>{{ c.id_cliente }}</td><td>{{ c.nombre }}</td><td>{{ c.correo }}</td></tr>
+  {% endfor %}
+</table>
+<a href="/vista_ordenes">Ver Vista de Órdenes</a> |
+<a href="/reporte_ventas">Reporte de Ventas</a> |
+<a href="/productos_mas_vendidos">Productos Más Vendidos</a>
